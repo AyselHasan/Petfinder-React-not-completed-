@@ -1,0 +1,46 @@
+footer {
+  background-color: #6504b5;
+  .container {
+    .footer-logo {
+      img {
+        width: 126px;
+        height: 35px;
+      }
+    }
+  }
+  .footer-icons {
+    height: 70px;
+    background-color: #2e0152;
+    color: #ddb4fd;
+  }
+}
+.footer-button {
+  width: 352px;
+  height: 45px;
+  border-radius: 30px;
+  border: 3px solid white;
+  background-color: #6504b5;
+  color: white;
+  &:hover {
+    background-color: white;
+    color: #6504b5 !important;
+  }
+}
+.accordion {
+  button {
+    background-color: #6504b5 !important;
+    color: WHITE !important;
+  }
+
+  .accordion-item {
+    background-color: #6504b5 !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+}
+
+.accordion-body {
+  a {
+    color: white !important;
+  }
+}

@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("./../icons/icomoon.eot");
+  src: url("./../icons/icomoon.eot?#iefix") format("embedded-opentype"),
+    url("./../icons/icomoon.woff") format("woff"),
+    url("./../icons/icomoon.ttf") format("truetype"),
+    url("./../icons/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "icomoon";
+  content: attr(data-icon);
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-regular {
+  font-family: "myFirstFont";
+}
+
+body {
+  background-color: #efeef1;
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+.margin-right-15 {
+  margin-right: 15px;
+}
+
+.margin-right-25 {
+  margin-right: 25px;
+}
+.margin-top-15 {
+  margin-top: 15% !important;
+}
+.nav-hover {
+  &:hover {
+    color: #6504b5;
+    cursor: pointer;
+  }
+}
+.font-size-13 {
+  font-size: 13px;
+}
+.font-size-15 {
+  font-size: 15px;
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.font-size-30 {
+  font-size: 30px;
+}
+.font-size-35 {
+  font-size: 35px !important;
+}
+.font-size-45 {
+  font-size: 45px;
+}
+.font-color-gray {
+  color: #4d4751;
+}
+.font-color-blue {
+  color: #004c81;
+}
+svg {
+  fill: #fff;
+}
+.vio-font-color {
+  color: #6504b5 !important;
+}
+.vio-font-color-2 {
+  color: #2e0152;
+}
+.font-weight-4 {
+  font-weight: 400;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.margin-left-2r {
+  margin-left: 2rem;
+}
+.a-unstyled {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+.margin-auto {
+  margin: 0 auto;
+}
+.a-style {
+  text-decoration: none;
+}
+
+@import "./header";
+@import "./footer";
+@import "./media-queries";

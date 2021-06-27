@@ -1,0 +1,240 @@
+@media (min-width: 280px) and (max-width: 320px) {
+  .pet-adoption {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 815px) {
+  .rv-cards-resp {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .footer-btn-r {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-icons {
+    height: 150px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 768px) {
+  .pet-adoption {
+    height: 5400px !important;
+  }
+}
+@media (min-width: 768px) and (max-height: 1024px) {
+  .pet-adoption {
+    height: 6800px !important;
+    padding: 10px;
+  }
+  .res-margin-3 {
+    margin-top: 30% !important;
+  }
+  .m-photo-position-3 {
+    left: 250px !important;
+  }
+}
+@media (min-width: 540px) and (max-width: 720px) {
+  .pet-adoption {
+    height: 5900px !important;
+    padding: 10px;
+  }
+}
+@media (min-width: 280px) and (max-width: 815px) {
+  .res-margin {
+    margin-top: 5%;
+  }
+  .res-margin-1 {
+    margin-top: 10%;
+  }
+  .res-margin-2 {
+    margin-top: 15%;
+  }
+  .res-margin-left {
+    margin-left: 4%;
+  }
+  .res-margin-3 {
+    margin-top: 50%;
+  }
+  .res-margin-bottom {
+    margin-bottom: 50%;
+  }
+  .res-margin-bottom-2 {
+    margin-bottom: 10%;
+  }
+  .res-margin-right {
+    margin-right: 10px;
+  }
+  .res-padding-0 {
+    padding: 0px !important;
+  }
+  .res-padding-7 {
+    padding: 7%;
+  }
+  .res-font-size {
+    font-size: 13px;
+  }
+  .res-font {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .carousel-cell {
+    min-width: 100%;
+  }
+  .breed-slider {
+    height: auto !important;
+  }
+  .slider-card {
+    display: flex;
+    justify-content: center;
+  }
+  .card-media {
+    .media-img {
+      margin: 0 auto;
+      min-width: 100% !important;
+    }
+  }
+  .resp-section-size {
+    width: 100%;
+  }
+  .resp-size {
+    height: 6000px !important;
+  }
+  .rv-cards {
+    display: none;
+  }
+  .footer-1 {
+    display: none;
+  }
+  .footer-icons {
+    height: 130px !important;
+    min-width: 100% !important;
+  }
+  footer {
+    font-family: "myFirstFont" !important;
+  }
+  .pet-cards {
+    display: none !important;
+  }
+  .footer-acc {
+    width: 100% !important;
+    background-color: #6504b5 !important ;
+  }
+  .m-photo-position {
+    left: 130px !important;
+  }
+  .no-p {
+    padding: 0px !important;
+  }
+  .page-content {
+    width: 100% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .resp-d-none {
+    display: none;
+  }
+  .footer-1 {
+    display: none;
+  }
+  .footer-3 {
+    display: none;
+  }
+  .fav-card {
+    width: 100% !important;
+  }
+  .w-100 {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 280px) and (max-width: 1024px) {
+  .section-sizing {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .height-auto {
+    height: auto !important;
+  }
+  .res-margin-1 {
+    margin-top: 10%;
+  }
+  .res-margin-2 {
+    margin-top: 15%;
+  }
+  input {
+    height: 95% !important;
+  }
+  .icon-section {
+    position: relative;
+    .search-icon {
+      position: absolute;
+      left: 0px !important;
+      top: 5px !important;
+      margin-right: 5px !important;
+    }
+  }
+  .find-pet-menu {
+    z-index: 9999999999999999999999999 !important;
+  }
+  .planning-adopt {
+    display: none !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1438px) {
+  .resp-d-none {
+    display: none;
+  }
+  .pet-adoption {
+    height: 3700px !important;
+  }
+}
+
+@media (min-width: 815px) and (max-width: 1438px) {
+  button {
+    max-width: 100% !important;
+  }
+  .footer-1 {
+    display: none;
+  }
+  .footer-2 {
+    display: none;
+  }
+}
+@media (min-width: 1438px) and (max-width: 2480px) {
+  .footer-2 {
+    display: none;
+  }
+  .footer-3 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-cell img {
+    height: 350px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  .margin-top-0 {
+    margin-top: 0px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .res-margin-4 {
+    margin-top: 5%;
+  }
+}
+@media (min-width: 998px) {
+  .resp-d-none-4 {
+    display: none !important;
+  }
+}
+@media (max-width: 998px) {
+  .resp-d-none-5 {
+    display: none !important;
+  }
+}
