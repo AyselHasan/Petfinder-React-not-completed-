@@ -1,5 +1,6 @@
 import RecentlyViewedCard from "./recentlyVCards";
-import cardImg from "./../../assets/images/rv-card-img.jpg";
+import RecentlyViewedCardsResp from "./recentlyVCardsResp";
+
 const RecentlyViewed = () => {
   return (
     <section className="recently-viewed-pets d-flex justify-content-around">
@@ -41,161 +42,11 @@ const RecentlyViewed = () => {
           className="carousel bg-transparent"
           data-flickity='{ "wrapAround": true }'
         >
-          <div className="carousel-cell d-flex justify-content-center">
-            <div className="pet-card shadow">
-              <div
-                className="
-              card-fav-icon
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                <span
-                  aria-hidden="true"
-                  data-icon=""
-                  className="down-arrow vio-font-color"
-                />
-              </div>
-              <div className="pet-card-img">
-                <img src={cardImg} alt />
-              </div>
-              <div
-                className="
-              pet-card-name
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                Pumpkin
-              </div>
-            </div>
-          </div>
-          <div className="carousel-cell d-flex justify-content-center">
-            <div className="pet-card shadow">
-              <div
-                className="
-              card-fav-icon
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                <span
-                  aria-hidden="true"
-                  data-icon=""
-                  className="down-arrow vio-font-color"
-                />
-              </div>
-              <div className="pet-card-img">
-                <img src={cardImg} alt />
-              </div>
-              <div
-                className="
-              pet-card-name
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                Pumpkin
-              </div>
-            </div>
-          </div>
-          <div className="carousel-cell d-flex justify-content-center">
-            <div className="pet-card shadow">
-              <div
-                className="
-              card-fav-icon
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                <span
-                  aria-hidden="true"
-                  data-icon=""
-                  className="down-arrow vio-font-color"
-                />
-              </div>
-              <div className="pet-card-img">
-                <img src={cardImg} alt />
-              </div>
-              <div
-                className="
-              pet-card-name
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                Pumpkin
-              </div>
-            </div>
-          </div>
-          <div className="carousel-cell d-flex justify-content-center">
-            <div className="pet-card shadow">
-              <div
-                className="
-              card-fav-icon
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                <span
-                  aria-hidden="true"
-                  data-icon=""
-                  className="down-arrow vio-font-color"
-                />
-              </div>
-              <div className="pet-card-img">
-                <img src={cardImg} alt />
-              </div>
-              <div
-                className="
-              pet-card-name
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                Pumpkin
-              </div>
-            </div>
-          </div>
-          <div className="carousel-cell d-flex justify-content-center">
-            <div className="pet-card shadow">
-              <div
-                className="
-              card-fav-icon
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                <span
-                  aria-hidden="true"
-                  data-icon=""
-                  className="down-arrow vio-font-color"
-                />
-              </div>
-              <div className="pet-card-img">
-                <img src={cardImg} alt />
-              </div>
-              <div
-                className="
-              pet-card-name
-              d-flex
-              justify-content-center
-              align-items-center
-            "
-              >
-                Pumpkin
-              </div>
-            </div>
-          </div>
+          <RecentlyViewedCardsResp />
+          <RecentlyViewedCardsResp />
+          <RecentlyViewedCardsResp />
+          <RecentlyViewedCardsResp />
+          <RecentlyViewedCardsResp />
         </div>
       </div>
       {/* Responsible cards */}
