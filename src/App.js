@@ -4,6 +4,8 @@ import Footer from "./components/layout/footer";
 import PetMatch from "./components/elements/petMatch";
 import FindPet from "./components/elements/findPetMenu";
 import RecentlyViewed from "./components/elements/recentlyViewed";
+import RecentlyViewedCardsResp from "./components/elements/recentlyVCardsResp";
+import Planning from "./components/elements/planningSection";
 import "./assets/scss/style.css";
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       <PetMatch />
       <FindPet />
       <RecentlyViewed />
+      <Planning />
       <Footer />
     </div>
   );
