@@ -1,0 +1,35 @@
+main {
+  .filter-breeds {
+    height: 400px;
+  }
+}
+.container {
+  .row {
+    svg {
+      width: 20px;
+      height: 10px;
+      fill: black;
+    }
+  }
+}
+.filter-btn {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  background-color: white;
+  &:hover {
+    border: 2px solid #6504b5;
+    background-color: white;
+    color: black;
+  }
+}
+.dropdown-menu {
+  width: 100% !important;
+}
+
+.viex-all {
+  display: flex;
+  justify-content: cetner;
+}
