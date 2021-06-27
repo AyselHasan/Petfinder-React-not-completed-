@@ -1,0 +1,45 @@
+.adoption-articles {
+  height: 700px;
+  .container {
+    .row {
+      .art-card {
+        .card-content {
+          background-color: white;
+          border-radius: 10px;
+          position: relative;
+          .card-img {
+            height: 260px;
+            border-radius: 10px 10px 0 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .card-mini-photo {
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            left: 270px;
+            top: 200px;
+            img {
+              width: 100px;
+              height: 100px;
+              border-radius: 100%;
+              border: 5px solid white;
+            }
+          }
+          .card-inner {
+            height: 149px;
+          }
+          .card-read-more {
+            border-top: 1px solid rgb(207, 207, 207);
+            height: 56px;
+            &:hover {
+              background-color: #6504b5;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
