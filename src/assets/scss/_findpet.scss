@@ -1,0 +1,70 @@
+.find-pet-menu {
+  background-color: transparent;
+}
+.find-pet {
+  button {
+    width: 277px;
+    height: 100px;
+    border: none;
+    background-color: #6504b5;
+    &:hover {
+      background-color: #410078;
+    }
+  }
+}
+#icon-dog,
+#icon-cat {
+  height: 50px;
+  width: 50px;
+}
+#find-city {
+  background-color: #2e0152;
+  width: 391px;
+  height: 100px;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  &::placeholder {
+    color: white;
+    padding: 0 20px 0 58px;
+  }
+}
+#find-dog {
+  position: relative;
+  &:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-style: solid;
+    border-width: 50px 0 50px 22px;
+    border-color: transparent transparent transparent #2e0152;
+  }
+}
+#find-other-pet {
+  border-radius: 0px 8px 8px 0px;
+}
+#button-border {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.dropdown-item {
+  svg {
+    fill: #6504b5;
+    width: 30px;
+    height: 30px;
+  }
+}
+.responsible-findpet {
+  background-color: #6504b5;
+  width: 100%;
+}
+.resp-button {
+  background-color: transparent !important;
+  border: none;
+}
+.resp-btn-border {
+  border-left: 1px solid black !important;
+  border-right: 1px solid black !important;
+}
