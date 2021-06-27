@@ -9,6 +9,7 @@ function openSection() {
   }
 }
 
+// ****************
 function openSection2() {
   resourcesBtn.classList.toggle("d-none");
   if (!breedBtn.classList.contains("d-none")) {
@@ -16,6 +17,7 @@ function openSection2() {
   }
 }
 
+// ****************
 function openSearch() {
   searchBtn.classList.toggle("d-none");
 }

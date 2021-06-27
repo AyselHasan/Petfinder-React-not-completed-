@@ -1,4 +1,5 @@
 import cardImg from "./../../assets/images/rv-card-img.jpg";
+
 const RecentlyViewedCard = () => {
   return (
     <div className="col-lg-3">

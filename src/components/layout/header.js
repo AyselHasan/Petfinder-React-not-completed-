@@ -1,4 +1,5 @@
 import logo from "./../../../src/assets/images/logo.png";
+import { openSection } from "./../../assets/js/navbar.js";
 const Header = () => {
   return (
     <header>
@@ -30,7 +31,7 @@ const Header = () => {
                       <button
                         className="nav-btns btn-decoration fw-bolder"
                         id="breed-btn"
-                        onclick="openSection()"
+                        onclick={openSection}
                       >
                         BREEDS
                         <span

@@ -231,7 +231,7 @@ const Footer = () => {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingOne">
                 <button
-                  className="accordion-button"
+                  className="accordion-button btn-decoration font-size-20"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
@@ -277,7 +277,7 @@ const Footer = () => {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingTwo">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button collapsed btn-decoration font-size-20"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
@@ -305,7 +305,7 @@ const Footer = () => {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingThree">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button collapsed btn-decoration font-size-20"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseThree"
@@ -440,7 +440,7 @@ const Footer = () => {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingOne">
                     <button
-                      className="accordion-button"
+                      className="accordion-button btn-decoration font-size-20"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne"
@@ -486,7 +486,7 @@ const Footer = () => {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingTwo">
                     <button
-                      className="accordion-button collapsed"
+                      className="accordion-button collapsed btn-decoration font-size-20"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseTwo"
@@ -514,7 +514,7 @@ const Footer = () => {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingThree">
                     <button
-                      className="accordion-button collapsed"
+                      className="accordion-button collapsed btn-decoration font-size-20"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseThree"

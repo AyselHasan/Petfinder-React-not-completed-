@@ -1,22 +1,18 @@
+import Home from "./components/views/home";
+import CatBreeds from "./components/views/catBreeds";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
-import PetMatch from "./components/elements/petMatch";
-import FindPet from "./components/elements/findPetMenu";
-import RecentlyViewed from "./components/elements/recentlyViewed";
-import Planning from "./components/elements/planningSection";
-import ArticleCardsSection from "./components/elements/articleCardsSection";
+import { Switch, Route, Link } from "react-router-dom";
 import "./assets/scss/style.css";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <PetMatch />
-      <FindPet />
-      <RecentlyViewed />
-      <Planning />
-      <RecentlyViewed />
-      <ArticleCardsSection />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/catBreeds" exact component={CatBreeds} />
+      </Switch>
       <Footer />
     </div>
   );
