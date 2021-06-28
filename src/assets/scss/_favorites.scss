@@ -1,0 +1,40 @@
+.adopt-it {
+  color: #2e0157;
+  text-decoration: underline #2e0157;
+}
+.fav-card-icon {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 100%;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  &:hover {
+    opacity: 1;
+  }
+}
+.fav-card {
+  width: 290px;
+  height: 409px;
+  position: relative;
+}
+
+.favorite-content {
+  height: 135px;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.fav-card-pic {
+  height: 290px;
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 10px 10px 0 0;
+  }
+}
+.icon-color-white {
+  color: white !important;
+}

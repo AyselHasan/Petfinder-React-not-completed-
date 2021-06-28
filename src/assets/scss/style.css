@@ -980,26 +980,26 @@ body {
   font-family: sans-serif;
 }
 
-.carousel-bgblack {
+.pet-img-gallery .carousel-bgblack {
   background: black;
 }
 
-.carousel {
+.pet-img-gallery .carousel {
   width: 100%;
 }
 
-.carousel-cell {
+.pet-img-gallery .carousel-cell {
   margin-right: 20px;
   overflow: hidden;
 }
 
-.carousel-cell img {
+.pet-img-gallery .carousel-cell img {
   display: block;
   height: 200px;
 }
 
 @media screen and (min-width: 768px) {
-  .carousel-cell img {
+  .pet-img-gallery .carousel-cell img {
     height: 400px;
   }
 }
@@ -1055,5 +1055,52 @@ body {
 
 .bar-icon:hover {
   background-color: #320053;
+}
+
+.adopt-it {
+  color: #2e0157;
+  -webkit-text-decoration: underline #2e0157;
+          text-decoration: underline #2e0157;
+}
+
+.fav-card-icon {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 100%;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.fav-card-icon:hover {
+  opacity: 1;
+}
+
+.fav-card {
+  width: 290px;
+  height: 409px;
+  position: relative;
+}
+
+.favorite-content {
+  height: 135px;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.fav-card-pic {
+  height: 290px;
+}
+
+.fav-card-pic img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px 10px 0 0;
+}
+
+.icon-color-white {
+  color: white !important;
 }
 /*# sourceMappingURL=style.css.map */
