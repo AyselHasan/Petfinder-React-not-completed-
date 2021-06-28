@@ -83,10 +83,10 @@ const SearchBar = () => {
             <div className="breed-buttons">
               <div className="d-flex justify-content-center mt-4">
                 <div className="row res-margin-bottom-2">
-                  <div className="col-lg-6 col-md-6 col-12 res-margin-1">
+                  <div className="col-lg-6 col-md-6 col-12">
                     <button className="search-btn w-100">By Collection</button>
                   </div>
-                  <div className="col-lg-6 col-md-6 col-12 res-margin-1">
+                  <div className="col-lg-6 col-md-6 col-12">
                     <button className="search-btn w-100">By Filters</button>
                   </div>
                 </div>

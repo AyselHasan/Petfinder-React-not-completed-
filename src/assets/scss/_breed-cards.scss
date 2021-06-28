@@ -1,0 +1,82 @@
+.breed-cards {
+  height: 600px;
+  border-top: 1px solid gray;
+  .breeds {
+    .container {
+      .row {
+        .col-lg-6 {
+          .breedcard-body {
+            .card-photo {
+              height: 260px;
+              img {
+                max-width: 100%;
+                min-height: 100%;
+                border-radius: 10px 10px 0 0;
+              }
+            }
+            .breed-name {
+              height: 65px;
+              border-bottom: 1px solid gray;
+            }
+            .breed-availability {
+              height: 56px;
+              border-radius: 0 0 10px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.pagination-btn {
+  min-width: 100% !important;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  &:hover {
+    border: 2px solid #6504b5;
+    background-color: white;
+    color: black;
+  }
+}
+.next-btn {
+  color: #6504b5 !important;
+  .btn-inner {
+    svg {
+      width: 20px;
+      height: 15px;
+      fill: #6504b5 !important;
+    }
+  }
+  &:hover {
+    background-color: #6504b5 !important;
+    color: white !important;
+    .btn-inner {
+      svg {
+        fill: white !important;
+      }
+    }
+  }
+}
+.card-hover {
+  &:hover {
+    cursor: pointer;
+    img {
+      opacity: 0.8 !important;
+    }
+    .breed-name {
+      &:hover {
+        text-decoration: underline #6504b5;
+      }
+    }
+    .breed-availability {
+      &:hover {
+        text-decoration: underline #6504b5;
+      }
+    }
+  }
+}

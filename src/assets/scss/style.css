@@ -835,12 +835,225 @@ main .filter-breeds {
   width: 100% !important;
 }
 
-.viex-all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: cetner;
-      -ms-flex-pack: cetner;
-          justify-content: cetner;
+.flickity-page-dots {
+  display: none !important;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  display: none !important;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  display: none !important;
+}
+
+.breed-slider {
+  height: 330px;
+  background-color: white;
+}
+
+.slider-card {
+  width: 310px;
+  height: 206px;
+  margin-right: 20px;
+}
+
+.slider-card a {
+  text-decoration: none;
+}
+
+.slider-card a .card-media img {
+  width: 100% !important;
+  border-radius: 10px 10px 0 0;
+}
+
+.slider-card a .slider-card-footer {
+  width: 310px;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+}
+
+.breed-cards {
+  height: 600px;
+  border-top: 1px solid gray;
+}
+
+.breed-cards .breeds .container .row .col-lg-6 .breedcard-body .card-photo {
+  height: 260px;
+}
+
+.breed-cards .breeds .container .row .col-lg-6 .breedcard-body .card-photo img {
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.breed-cards .breeds .container .row .col-lg-6 .breedcard-body .breed-name {
+  height: 65px;
+  border-bottom: 1px solid gray;
+}
+
+.breed-cards .breeds .container .row .col-lg-6 .breedcard-body .breed-availability {
+  height: 56px;
+  border-radius: 0 0 10px 10px;
+}
+
+.pagination-btn {
+  min-width: 100% !important;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+
+.pagination-btn:hover {
+  border: 2px solid #6504b5;
+  background-color: white;
+  color: black;
+}
+
+.next-btn {
+  color: #6504b5 !important;
+}
+
+.next-btn .btn-inner svg {
+  width: 20px;
+  height: 15px;
+  fill: #6504b5 !important;
+}
+
+.next-btn:hover {
+  background-color: #6504b5 !important;
+  color: white !important;
+}
+
+.next-btn:hover .btn-inner svg {
+  fill: white !important;
+}
+
+.card-hover:hover {
+  cursor: pointer;
+}
+
+.card-hover:hover img {
+  opacity: 0.8 !important;
+}
+
+.card-hover:hover .breed-name:hover {
+  -webkit-text-decoration: underline #6504b5;
+          text-decoration: underline #6504b5;
+}
+
+.card-hover:hover .breed-availability:hover {
+  -webkit-text-decoration: underline #6504b5;
+          text-decoration: underline #6504b5;
+}
+
+.bg-details {
+  background-color: white;
+  border-radius: 10px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.f-italic {
+  font-style: italic;
+}
+
+.title-svg {
+  fill: #4d4751;
+  width: 25px;
+  height: 25px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel-bgblack {
+  background: black;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
+
+.adoption-articles {
+  background-color: #efeef1;
+}
+
+.card-content {
+  position: relative;
+  border: 1px solid #cacaca;
+}
+
+.m-photo-position {
+  position: absolute !important;
+  left: 220px !important;
+}
+
+.profile-bar {
+  min-width: 100% !important;
+  height: 80px;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.pic-container {
+  width: 50px;
+  height: 50px;
+}
+
+.pic-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.bar-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #6504b5;
+  border-radius: 100%;
+  float: left;
+  border: none;
+}
+
+.bar-icon svg {
+  width: 25px !important;
+  height: 25px !important;
+  fill: white !important;
+}
+
+.bar-icon:hover {
+  background-color: #320053;
 }
 /*# sourceMappingURL=style.css.map */

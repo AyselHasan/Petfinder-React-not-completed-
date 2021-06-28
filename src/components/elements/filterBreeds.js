@@ -138,7 +138,7 @@ const FilterBreeds = () => {
               </div>
             </div>
           </div>
-          <div className="text-center mt-4 res-margin">
+          <div className="mt-4 res-margin">
             <ul className="list-unstyled">
               <li>
                 View All Filters
