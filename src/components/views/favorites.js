@@ -6,4 +6,4 @@ const FavoritePets = () => {
     </div>
   );
 };
-export default FavoritesSection;
+export default FavoritePets;

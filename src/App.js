@@ -5,7 +5,8 @@ import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
 import { Switch, Route, Link } from "react-router-dom";
 import "./assets/scss/style.css";
-import FavoritesSection from "./components/elements/favoritesSection";
+import FavoritePets from "./components/views/favorites";
+import NoFavorites from "./components/views/noFavorites";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/catBreeds" exact component={CatBreeds} />
         <Route path="/petprofile" exact component={PetProfile} />
-        <Route path="/favorites" exact component={FavoritesSection} />
+        <Route path="/favorites" exact component={FavoritePets} />
+        <Route path="/nofavorite" exact component={NoFavorites} />
       </Switch>
       <Footer />
     </div>
