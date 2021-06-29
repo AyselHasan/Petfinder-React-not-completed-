@@ -3,15 +3,6 @@ main {
     height: 400px;
   }
 }
-.container {
-  .row {
-    svg {
-      width: 20px;
-      height: 10px;
-      fill: black;
-    }
-  }
-}
 .filter-btn {
   width: 100%;
   height: 60px;
@@ -27,4 +18,24 @@ main {
 }
 .dropdown-menu {
   width: 100% !important;
+}
+#filter-btn {
+  width: 15% !important;
+  background-color: #6504b5;
+  font-weight: bold;
+  color: white;
+  height: 30px;
+  border-radius: 10px;
+}
+.filter-show {
+  height: 40px;
+  width: 100% !important;
+  svg {
+    width: 20px;
+    height: 10px;
+    fill: black;
+  }
+}
+.btn-2 {
+  float: right;
 }

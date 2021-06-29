@@ -810,12 +810,6 @@ main .filter-breeds {
   height: 400px;
 }
 
-.container .row svg {
-  width: 20px;
-  height: 10px;
-  fill: black;
-}
-
 .filter-btn {
   width: 100%;
   height: 60px;
@@ -835,6 +829,30 @@ main .filter-breeds {
   width: 100% !important;
 }
 
+#filter-btn {
+  width: 15% !important;
+  background-color: #6504b5;
+  font-weight: bold;
+  color: white;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.filter-show {
+  height: 40px;
+  width: 100% !important;
+}
+
+.filter-show svg {
+  width: 20px;
+  height: 10px;
+  fill: black;
+}
+
+.btn-2 {
+  float: right;
+}
+
 .flickity-page-dots {
   display: none !important;
 }
@@ -850,29 +868,32 @@ main .filter-breeds {
 }
 
 .breed-slider {
-  height: 330px;
+  height: auto;
   background-color: white;
 }
 
 .slider-card {
-  width: 310px;
-  height: 206px;
+  width: 310px !important;
+  height: 206px !important;
   margin-right: 20px;
 }
 
-.slider-card a {
-  text-decoration: none;
+.slider-card-media {
+  width: 100% !important;
 }
 
-.slider-card a .card-media img {
-  width: 100% !important;
+.slider-card-media img {
   border-radius: 10px 10px 0 0;
 }
 
-.slider-card a .slider-card-footer {
+.slider-card-footer {
   width: 310px;
   height: 50px;
   border-radius: 0 0 10px 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .breed-cards {

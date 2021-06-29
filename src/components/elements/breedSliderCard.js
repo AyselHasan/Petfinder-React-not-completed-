@@ -3,10 +3,10 @@ import sliderImage from "./../../assets/images/breedcard1.jpg";
 const BreedSliderCard = () => {
   return (
     <div className="carousel-cell">
-      <div className="slider-card shadow">
-        <a href>
-          <div className="card-media">
-            <img className="media-img" src={sliderImage} alt="" />
+      <a href>
+        <div className="slider-card shadow">
+          <div className="slider-card-media">
+            <img src={sliderImage} />
           </div>
           <div
             className="
@@ -21,8 +21,8 @@ const BreedSliderCard = () => {
           >
             <h3>HYPOALLERGENIC DOGS</h3>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   );
 };

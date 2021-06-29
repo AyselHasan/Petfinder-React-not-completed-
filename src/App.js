@@ -1,5 +1,6 @@
 import Home from "./components/views/home";
 import CatBreeds from "./components/views/catBreeds";
+import DogBreeds from "./components/views/dogBreeds";
 import PetProfile from "./components/views/petProfile";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
@@ -14,7 +15,8 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/catBreeds" exact component={CatBreeds} />
+        <Route path="/catbreeds" exact component={CatBreeds} />
+        <Route path="/dogbreeds" exact component={DogBreeds} />
         <Route path="/petprofile" exact component={PetProfile} />
         <Route path="/favorites" exact component={FavoritePets} />
         <Route path="/nofavorite" exact component={NoFavorites} />

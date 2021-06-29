@@ -10,25 +10,25 @@
   display: none !important;
 }
 .breed-slider {
-  height: 330px;
+  height: auto;
   background-color: white;
 }
 .slider-card {
-  width: 310px;
-  height: 206px;
+  width: 310px !important;
+  height: 206px !important;
   margin-right: 20px;
-  a {
-    text-decoration: none;
-    .card-media {
-      img {
-        width: 100% !important;
-        border-radius: 10px 10px 0 0;
-      }
-    }
-    .slider-card-footer {
-      width: 310px;
-      height: 50px;
-      border-radius: 0 0 10px 10px;
-    }
+}
+.slider-card-media {
+  width: 100% !important;
+  img {
+    border-radius: 10px 10px 0 0;
   }
+}
+.slider-card-footer {
+  width: 310px;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+}
+a {
+  text-decoration: none;
 }

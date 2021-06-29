@@ -3,7 +3,7 @@ const NoFavorites = () => {
     <section className="no-favorites">
       <div className="no-favs mt-5 mb-5">
         <div className="row text-center">
-          <div className="col-md-12">
+          <div className="col-12">
             <span className="fw-bolder font-size-45 font-color-gray">
               No Favorites here yet
             </span>
@@ -21,20 +21,6 @@ const NoFavorites = () => {
               </span>
             </div>
           </div>
-          {/* <div className="find-buttons mt-5 d-flex justify-content-center">
-            <div className="row">
-              <button className="find-pet-btn col-lg-12 col-xl-12">
-                FIND A DOG
-              </button>
-            </div>
-            <div className="row">
-              <button className="find-pet-btn fw-bolder mt-3 col-lg-12 col-xl-12">
-                FIND A CAT
-              </button>
-            </div>
-            
-          </div> */}
-
           <div className="find-pet-buttons d-flex justify-content-center mt-5">
             <ul className="list-unstyled">
               <li className="row">

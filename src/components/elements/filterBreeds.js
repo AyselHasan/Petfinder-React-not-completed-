@@ -17,7 +17,7 @@ const FilterBreeds = () => {
           </p>
         </div>
         <div className="row res-margin">
-          <div className="col-lg-5 res-margin">
+          <div className="col-lg-6 res-margin">
             <div className="filter-heading text-center mb-3">
               <p>GENDER</p>
             </div>
@@ -30,7 +30,7 @@ const FilterBreeds = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 res-margin">
+          <div className="col-lg-6 res-margin">
             <div className="filter-heading text-center mb-3">
               <p>AGE</p>
             </div>
@@ -61,21 +61,8 @@ const FilterBreeds = () => {
               </div>
             </div>
           </div>
-          <div
-            className="
-              col-lg-2
-              res-margin
-              d-flex
-              align-items-center
-              justify-content-center
-              vio-font-color
-              fw-bolder
-            "
-          >
-            Reset Filters()
-          </div>
         </div>
-        <div className="row mt-5 res-margin">
+        <div id="all-filters" className="row mt-5 res-margin d-none">
           <div className="col-lg-6 res-margin">
             <div className="filter-heading text-center mb-3">
               <p>COLOR</p>
@@ -138,24 +125,34 @@ const FilterBreeds = () => {
               </div>
             </div>
           </div>
-          <div className="mt-4 res-margin">
-            <ul className="list-unstyled">
-              <li>
-                View All Filters
-                <svg id="icon-chevronDown" viewBox="0 0 24.8 15.92">
-                  <title>icon-chevronDown</title>
-                  <path d="M9.95,14.95a3.57,3.57,0,0,0,4.9,0l8.9-8.9a3.5,3.5,0,0,0,0-5,3.5,3.5,0,0,0-5,0h0l-6.4,6.4-6.3-6.4a3.5,3.5,0,0,0-5,0,3.5,3.5,0,0,0,0,5l8.9,8.9Z" />
-                </svg>
-              </li>
-              <li>
-                Show Less Filters
-                <svg id="icon-chevronUp" viewBox="0 0 24.8 15.9">
-                  <title>icon-chevronUp</title>
-                  <path d="M14.9 1C13.5-.3 11.4-.3 10 1L1.1 9.9c-1.4 1.4-1.4 3.6-.1 4.9l.1.1c1.4 1.4 3.6 1.4 4.9.1l.1-.1 6.4-6.4 6.3 6.4c1.4 1.4 3.6 1.4 4.9.1l.1-.1c1.4-1.4 1.4-3.6.1-4.9l-.1-.1L14.9 1z" />
-                </svg>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div className="d-flex justify-content-center">
+          <button
+            id="filter-btn"
+            className="
+              res-margin
+              btn-decoration
+              mt-4
+            "
+          >
+            Find!
+          </button>
+        </div>
+        <div className="filter-show mt-4 d-flex justify-content-center">
+          <button id="view-all" className="btn-decoration">
+            View All Filters
+            <svg id="icon-chevronDown" viewBox="0 0 24.8 15.92">
+              <title>icon-chevronDown</title>
+              <path d="M9.95,14.95a3.57,3.57,0,0,0,4.9,0l8.9-8.9a3.5,3.5,0,0,0,0-5,3.5,3.5,0,0,0-5,0h0l-6.4,6.4-6.3-6.4a3.5,3.5,0,0,0-5,0,3.5,3.5,0,0,0,0,5l8.9,8.9Z" />
+            </svg>
+          </button>
+          <button id="show-less" className="btn-decoration">
+            Show Less Filters
+            <svg id="icon-chevronUp" viewBox="0 0 24.8 15.9">
+              <title>icon-chevronUp</title>
+              <path d="M14.9 1C13.5-.3 11.4-.3 10 1L1.1 9.9c-1.4 1.4-1.4 3.6-.1 4.9l.1.1c1.4 1.4 3.6 1.4 4.9.1l.1-.1 6.4-6.4 6.3 6.4c1.4 1.4 3.6 1.4 4.9.1l.1-.1c1.4-1.4 1.4-3.6.1-4.9l-.1-.1L14.9 1z" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
