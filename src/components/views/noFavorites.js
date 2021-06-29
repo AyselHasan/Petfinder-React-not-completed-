@@ -21,73 +21,81 @@ const NoFavorites = () => {
               </span>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-12">
-              <div className="find-buttons mt-5">
-                <ul>
-                  <li>
-                    <button className="find-pet-btn">FIND A DOG</button>
-                  </li>
-                  <li>
-                    <button className="find-pet-btn fw-bolder mt-3">
-                      FIND A CAT
-                    </button>
-                  </li>
-                  <li>
-                    <div className="dropdown">
-                      <button
-                        className="
-                            btn btn-secondary
+          {/* <div className="find-buttons mt-5 d-flex justify-content-center">
+            <div className="row">
+              <button className="find-pet-btn col-lg-12 col-xl-12">
+                FIND A DOG
+              </button>
+            </div>
+            <div className="row">
+              <button className="find-pet-btn fw-bolder mt-3 col-lg-12 col-xl-12">
+                FIND A CAT
+              </button>
+            </div>
+            
+          </div> */}
+
+          <div className="find-pet-buttons d-flex justify-content-center mt-5">
+            <ul className="list-unstyled">
+              <li className="row">
+                <button className="find-pet-btn mt-3 col-lg-12 col-12">
+                  FIND A DOG
+                </button>
+              </li>
+              <li className="row">
+                <button className="find-pet-btn mt-3 col-lg-12 col-12">
+                  FIND A CAT
+                </button>
+              </li>
+              <li className="dropdown row">
+                <button
+                  className="
+                col-lg-12 col-12
+                dropdown-btn
                             dropdown-toggle
-                            filter-btn
                             find-pet-btn
                             fw-bolder
                             mt-3
                           "
-                        type="button"
-                        id="dropdownMenuButton"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        <span className="text-white fw-bolder">
-                          FIND OTHER PETS
-                        </span>
-                      </button>
-                      <div
-                        className="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton"
-                      >
-                        <a
-                          className="dropdown-item fw-bolder vio-font-color"
-                          href="#"
-                        >
-                          Rabbits
-                        </a>
-                        <a
-                          className="dropdown-item fw-bolder vio-font-color"
-                          href="#"
-                        >
-                          Birds
-                        </a>
-                        <a
-                          className="dropdown-item fw-bolder vio-font-color"
-                          href="#"
-                        >
-                          Horses
-                        </a>
-                        <a
-                          className="dropdown-item fw-bolder vio-font-color"
-                          href="#"
-                        >
-                          Scales, Fins &amp; Other
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span className="text-white fw-bolder">FIND OTHER PETS</span>
+                </button>
+                <div
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <a
+                    className="dropdown-item fw-bolder vio-font-color"
+                    href="#"
+                  >
+                    Rabbits
+                  </a>
+                  <a
+                    className="dropdown-item fw-bolder vio-font-color"
+                    href="#"
+                  >
+                    Birds
+                  </a>
+                  <a
+                    className="dropdown-item fw-bolder vio-font-color"
+                    href="#"
+                  >
+                    Horses
+                  </a>
+                  <a
+                    className="dropdown-item fw-bolder vio-font-color"
+                    href="#"
+                  >
+                    Scales, Fins &amp; Other
+                  </a>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

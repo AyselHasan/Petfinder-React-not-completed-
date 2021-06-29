@@ -1105,24 +1105,34 @@ body {
 }
 
 .no-favs {
-  width: 40%;
+  width: 40% !important;
   height: auto;
   margin: 0 auto;
 }
 
 .find-pet-btn {
-  width: 100% !important;
   height: 50px;
+  width: 100% !important;
+  float: right;
   padding: 11px 30px;
   border: 2px solid #6504b5;
-  border-radius: 23px;
+  border-radius: 25px;
   background-color: #6504b5;
   font-size: 13px;
   color: white;
-  margin: 0 auto;
+}
+
+.dropdown-btn:hover {
+  color: #6504b5 !important;
 }
 
 .dropdown-menu {
   width: 100%;
+}
+
+.find-pet-buttons {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
