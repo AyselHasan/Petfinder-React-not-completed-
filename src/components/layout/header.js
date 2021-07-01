@@ -1,9 +1,22 @@
 import logo from "./../../../src/assets/images/logo.png";
-import { openSection } from "./../../assets/js/navbar.js";
+
+import signInModal from "../elements/signInModal";
+import loginModal from "../elements/loginModal";
+
+var show = false;
+function modalFunction() {
+  show = true;
+}
+function modalFunction2() {
+  document.getElementById("Mymodal-2").classList.remove("d-none");
+}
+
 const Header = () => {
   return (
     <header>
       <div className="container">
+        <signInModal />
+        <loginModal />
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
@@ -31,7 +44,6 @@ const Header = () => {
                       <button
                         className="nav-btns btn-decoration fw-bolder"
                         id="breed-btn"
-                        onclick={openSection}
                       >
                         BREEDS
                         <span
@@ -101,7 +113,7 @@ const Header = () => {
           "
                     >
                       <button
-                        onclick="modalFunction()"
+                        onClick={modalFunction}
                         id="signup-m"
                         className="btn-decoration fw-bolder nav-hover"
                       >
@@ -110,7 +122,7 @@ const Header = () => {
                     </li>
                     <li className="margin-left-15 font-size-22 font-color-gray">
                       <button
-                        onclick="modalFunction2()"
+                        onclick={modalFunction2}
                         id="signup-m"
                         className="fw-bolder btn-decoration nav-hover"
                       >
