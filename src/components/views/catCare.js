@@ -1,6 +1,5 @@
 import catCareCard from "./../elements/catCareCard";
-
-const catCareSection = () => {
+const catCare = () => {
   return (
     <section className="petcare-cards mb-3">
       <div className="container">
@@ -14,4 +13,4 @@ const catCareSection = () => {
   );
 };
 
-export default catCareSection;
+export default catCare;

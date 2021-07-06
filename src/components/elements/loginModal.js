@@ -9,7 +9,6 @@ const loginModal = () => {
         <div className="modal-content p-4 font-regular">
           <div className="d-flex justify-content-end">
             <button
-              onclick={closeModal2}
               id="close-btn"
               className="font-size-35 vio-font-color close-modal"
             >

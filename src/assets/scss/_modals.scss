@@ -1,0 +1,102 @@
+.btn-svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 3%;
+}
+.modal-btn {
+  button {
+    height: 60px;
+    min-width: 100% !important;
+    border-radius: 30px;
+    border: none;
+    font-weight: bolder;
+    svg {
+      fill: #6404b5;
+    }
+    color: #6404b5;
+    border: 3px solid #6404b5;
+    &:hover {
+      svg {
+        fill: white;
+      }
+      background-color: #6404b5;
+      color: white;
+    }
+  }
+}
+// #fb-btn {
+//   button {
+//     background-color: #3c5a99;
+//     color: white;
+//     &:hover {
+//       background-color: #273a63;
+//     }
+//   }
+// }
+// #google-btn {
+//   button {
+//     border: 3px solid #d2d1d3;
+//     color: #d2d1d3;
+//     background-color: transparent;
+//     &:hover {
+//       color: rgb(41, 41, 41);
+//       border: 3px solid rgb(41, 41, 41);
+//     }
+//   }
+// }
+.details-btn {
+  border: none;
+  background-color: transparent;
+  a {
+    color: #6404b5;
+    text-decoration: 1px #6404b5 solid;
+  }
+}
+.home-modal {
+  //display: none;
+  position: fixed;
+  z-index: 1111111111111111111;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #fefefe !important;
+  margin: auto;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 20px;
+}
+.close-modal {
+  border: none;
+  width: 30px;
+  background-color: transparent;
+  float: right !important;
+  font-weight: bold;
+}
+.login-input {
+  max-height: 40px !important;
+  margin: 0 auto;
+  &:hover {
+    border: 1px solid #6404b5;
+  }
+}
+.login-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #6404b5;
+  border-radius: 100px;
+  border: none;
+  &:hover {
+    background-color: #280247;
+  }
+}
+.nav-btns {
+  &:hover {
+    color: #6404b5;
+  }
+}

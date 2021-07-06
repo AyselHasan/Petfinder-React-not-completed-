@@ -1,22 +1,17 @@
 import logo from "./../../../src/assets/images/logo.png";
-
-import signInModal from "../elements/signInModal";
-import loginModal from "../elements/loginModal";
-
-var show = false;
-function modalFunction() {
-  show = true;
-}
-function modalFunction2() {
-  document.getElementById("Mymodal-2").classList.remove("d-none");
-}
+import React, { useEffect, useState } from "react";
+import SignInModal from "../elements/SignInModal";
+import LoginModal from "../elements/LoginModal";
 
 const Header = () => {
+  const [openSection, showSection] = useState(false);
+  const [openSection2, showSection2] = useState(false);
+  const [openSearch, showSearch] = useState(false);
+  const [openSignInModal, openSignIn] = useState(false);
   return (
     <header>
+      {openSignInModal && <SignInModal openSignIn={!openSignInModal} />}
       <div className="container">
-        <signInModal />
-        <loginModal />
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
@@ -39,11 +34,15 @@ const Header = () => {
             >
               <div className="container">
                 <div className="row mt-4">
-                  <ul className="col-lg-7 navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item font-regular nav-hover fw-bolder font-size-13">
+                  <ul className="col-lg-7 navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li className="col-lg-2 nav-item font-regular nav-hover fw-bolder font-size-13">
                       <button
                         className="nav-btns btn-decoration fw-bolder"
                         id="breed-btn"
+                        onClick={() => {
+                          showSection(!openSection);
+                          showSection2(false);
+                        }}
                       >
                         BREEDS
                         <span
@@ -66,7 +65,10 @@ const Header = () => {
                       <button
                         className="nav-btns btn-decoration fw-bolder"
                         id="res-btn"
-                        onclick="openSection2()"
+                        onClick={() => {
+                          showSection2(!openSection2);
+                          showSection(false);
+                        }}
                       >
                         RESOURCES
                         <span
@@ -76,19 +78,24 @@ const Header = () => {
                         />
                       </button>
                     </li>
-                  </ul>
-                  <ul className="col-lg-5 list-unstyled d-flex">
                     <li>
                       {" "}
                       <input
-                        id="search-btn"
-                        className="form-control nav-input d-none"
+                        className={
+                          openSearch === false ? "d-none" : "nav-input"
+                        }
                         type="text"
                       />
                     </li>
+                  </ul>
+                  <ul className="col-lg-5 list-unstyled d-flex">
                     <li>
-                      {" "}
-                      <button onclick="openSearch()" className="btn-decoration">
+                      <button
+                        className="btn-decoration"
+                        onClick={() => {
+                          showSearch(!openSearch);
+                        }}
+                      >
                         <span
                           aria-hidden="true"
                           data-icon=""
@@ -113,16 +120,16 @@ const Header = () => {
           "
                     >
                       <button
-                        onClick={modalFunction}
-                        id="signup-m"
                         className="btn-decoration fw-bolder nav-hover"
+                        onClick={() => {
+                          openSignIn(!openSignInModal);
+                        }}
                       >
                         Sign up
                       </button>
                     </li>
                     <li className="margin-left-15 font-size-22 font-color-gray">
                       <button
-                        onclick={modalFunction2}
                         id="signup-m"
                         className="fw-bolder btn-decoration nav-hover"
                       >
@@ -136,8 +143,8 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      <div id="nav-breed" className="breed-nav-section d-none">
-        <div className="container">
+      <div id="nav-breed" className={openSection === false ? "d-none" : ""}>
+        <div className="breed-nav-section">
           <div className="row breed-nav">
             <div className="col-lg-3 breed-btn" />
             <div className="col-lg-3 breed-btn">
@@ -163,8 +170,11 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div id="nav-resources" className="resources-section d-none">
-        <div className="resources row font-regular">
+      <div
+        id="nav-resources"
+        className={openSection2 === false ? "d-none" : ""}
+      >
+        <div className="resources-section resources row font-regular">
           <div className="col-lg-3 d-flex align-items-center justify-content-center">
             <button className="text-white btn-decoration">
               ABOUT PET ADOPTION
