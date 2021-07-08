@@ -1,17 +1,18 @@
-import { useState } from "react";
-
-const signInModal = ({ openSignInModal }) => {
+const signInModal = ({ openSignInModal, closeSModalChildHandler }) => {
   return (
     <section
       id="Mymodal-1"
       className={openSignInModal === false ? "d-none" : ""}
     >
       <div className="home-modal d-flex justify-content-center">
-        <div className="modal-content p-2 font-regular">
+        <div className="modal-content p-2">
           <div className="d-flex justify-content-end">
             <button
               id="close-btn"
               className="font-size-35 vio-font-color close-modal"
+              onClick={() => {
+                closeSModalChildHandler(false);
+              }}
             >
               x
             </button>

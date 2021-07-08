@@ -2,15 +2,37 @@ import logo from "./../../../src/assets/images/logo.png";
 import React, { useEffect, useState } from "react";
 import SignInModal from "../elements/SignInModal";
 import LoginModal from "../elements/LoginModal";
+import WishListModal from "../elements/WishListModal";
 
 const Header = () => {
   const [openSection, showSection] = useState(false);
   const [openSection2, showSection2] = useState(false);
   const [openSearch, showSearch] = useState(false);
   const [openSignInModal, openSignIn] = useState(false);
+  const [openLogInModal, openLogIn] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
+
+  const CloseSignInModalHandler = (boolFalse) => {
+    openSignIn(boolFalse);
+  };
+  const CloseLogInModalHandler = (boolFalse) => {
+    openLogIn(boolFalse);
+  };
   return (
     <header>
-      {openSignInModal && <SignInModal openSignIn={!openSignInModal} />}
+      {openSignInModal && (
+        <SignInModal
+          openSignIn={!openSignInModal}
+          closeSModalChildHandler={CloseSignInModalHandler}
+        />
+      )}
+      {openLogInModal && (
+        <LoginModal
+          openLogIn={!openLogInModal}
+          closeLModalChildHandler={CloseLogInModalHandler}
+        />
+      )}
+      <WishListModal show={modalShow} onHide={() => setModalShow(false)} />
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
           <div className="container-fluid">
@@ -104,7 +126,10 @@ const Header = () => {
                       </button>
                     </li>
                     <li>
-                      <button className="btn-decoration">
+                      <button
+                        className="btn-decoration"
+                        onClick={() => setModalShow(true)}
+                      >
                         <span
                           aria-hidden="true"
                           data-icon=""
@@ -132,6 +157,9 @@ const Header = () => {
                       <button
                         id="signup-m"
                         className="fw-bolder btn-decoration nav-hover"
+                        onClick={() => {
+                          openLogIn(!openLogInModal);
+                        }}
                       >
                         Log in
                       </button>

@@ -1,16 +1,18 @@
-function closeModal2() {
-  document.getElementById("Mymodal-2").classList.add("d-none");
-}
-
-const loginModal = () => {
+const loginModal = ({ openLogInModal, closeLModalChildHandler }) => {
   return (
-    <section id="Mymodal-2" className="d-none">
+    <section
+      id="Mymodal-2"
+      className={openLogInModal === false ? "d-none" : ""}
+    >
       <div className="home-modal d-flex justify-content-center">
         <div className="modal-content p-4 font-regular">
           <div className="d-flex justify-content-end">
             <button
               id="close-btn"
               className="font-size-35 vio-font-color close-modal"
+              onClick={() => {
+                closeLModalChildHandler(false);
+              }}
             >
               x
             </button>
@@ -43,7 +45,7 @@ const loginModal = () => {
                 or log in with
               </p>
               <div className="row">
-                <div className="col-lg-6 col-xl-12">
+                {/* <div className="col-lg-6 col-xl-12">
                   <div className="modal-btn mt-3" id="fb-btn">
                     <button>
                       <svg
@@ -56,8 +58,8 @@ const loginModal = () => {
                       Facebook
                     </button>
                   </div>
-                </div>
-                <div className="col-lg-6 col-xl-12">
+                </div> */}
+                {/* <div className="col-lg-6 col-xl-12">
                   <div className="modal-btn mt-3" id="google-btn">
                     <button>
                       <svg
@@ -87,7 +89,7 @@ const loginModal = () => {
                       Google
                     </button>
                   </div>
-                </div>
+                </div> */}
               </div>
               <ul className="list-unstyled d-flex justify-content-center mt-5">
                 <li className="font-color-gray fw-bolder">Need an account?</li>
