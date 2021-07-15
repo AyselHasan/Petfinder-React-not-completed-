@@ -9,12 +9,11 @@ import "./assets/scss/style.css";
 import FavoritePets from "./components/views/favorites";
 import NoFavorites from "./components/views/noFavorites";
 import CatCare from "./components/views/catCare";
-
-import { useState } from "react";
-import Modal from "./components/elements/SignInModal";
+import FilterPage from "./components/views/filterPage";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
-  const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className="App">
       <Header />
@@ -26,6 +25,7 @@ function App() {
         <Route path="/catcare" exact component={CatCare} />
         <Route path="/favorites" exact component={FavoritePets} />
         <Route path="/nofavorite" exact component={NoFavorites} />
+        <Route path="/filterpage" exact component={FilterPage} />
       </Switch>
       <Footer />
     </div>

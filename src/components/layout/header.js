@@ -2,7 +2,6 @@ import logo from "./../../../src/assets/images/logo.png";
 import React, { useEffect, useState } from "react";
 import SignInModal from "../elements/SignInModal";
 import LoginModal from "../elements/LoginModal";
-import WishListModal from "../elements/WishListModal";
 
 const Header = () => {
   const [openSection, showSection] = useState(false);
@@ -32,7 +31,6 @@ const Header = () => {
           closeLModalChildHandler={CloseLogInModalHandler}
         />
       )}
-      <WishListModal show={modalShow} onHide={() => setModalShow(false)} />
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
           <div className="container-fluid">

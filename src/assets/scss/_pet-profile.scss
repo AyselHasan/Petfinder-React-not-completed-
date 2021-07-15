@@ -22,27 +22,31 @@ body {
 }
 
 .pet-img-gallery {
-  .carousel-bgblack {
-    background: black;
-  }
-
+  background: black;
   .carousel {
     width: 100%;
   }
 
   .carousel-cell {
-    margin-right: 20px;
-    overflow: hidden;
+    height: 400px;
+    min-width: 100% !important;
   }
 
   .carousel-cell img {
-    display: block;
+    min-width: 100% !important;
     height: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    .carousel-cell img {
+      height: 300px;
+      max-width: 100% !important;
+    }
   }
 
   @media screen and (min-width: 768px) {
     .carousel-cell img {
       height: 400px;
+      max-width: 100% !important;
     }
   }
 }
